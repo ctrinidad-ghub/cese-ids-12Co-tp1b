@@ -25,23 +25,27 @@
 
 /*=====[Definitions of public global variables]==============================*/
 
+//! Estructura con los datos del alumno 'Esteban Volentini'
 static const struct alumno_s ESTEBAN_VOLENTINI = {
     .apellidos = "VOLENTINI",
     .nombres = "Esteban Daniel",
     .documento = "23.517.968",
 };
 
+//! Estructura con los datos del alumno 'Cristian Trinidad'
 static const struct alumno_s CRISTIAN_TRINIDAD = {
     .apellidos = "TRINIDAD",
     .nombres = "Cristian Alberto",
     .documento = "30.379.563",
 };
 
+//! Estructura para almacenar la lista de alumnos
 const alumno_t ALUMNOS[] = {
     &ESTEBAN_VOLENTINI,
     &CRISTIAN_TRINIDAD,
 };
 
+//! Cantidad de alumnos en vector de alumnos
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
 
 /*=====[Definitions of private global variables]=============================*/
